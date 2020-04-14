@@ -23,7 +23,7 @@ int main()
 	printf("Enter your group : ");
 	scanf("%s", s.group);
 
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < 5; i++)
 	{
 		printf("Enter your grades in 5 subjects : ");
 		scanf("%i", &s.A[i]);
