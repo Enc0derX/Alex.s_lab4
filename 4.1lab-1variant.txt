@@ -1,0 +1,44 @@
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+
+struct student
+{
+	char firestname[20];
+	char secondname[20];
+	char group[20];
+	int  A[5] = {0,0,0,0,0 };
+};
+
+int main()
+{
+	struct student s;
+	printf("Enter your firstname : ");
+	scanf("%s", s.firestname);
+
+	printf("Enter your secondname : ");
+	scanf("%s", s.secondname);
+
+	printf("Enter your group : ");
+	scanf("%s", s.group);
+
+	for (int i = 0; i < 4; i++)
+	{
+		printf("Enter your grades in 5 subjects : ");
+		scanf("%i", &s.A[i]);
+	}
+
+	//check
+	printf("\n\n RESULT \n\n firstname: %s", s.firestname);
+
+	printf("\nsecondname: %s ", s.secondname);
+
+	printf("\ngroup: %s", s.group);
+
+	for (int i = 0; i < 5; i++)
+	{
+		printf("\n grade: %i ", s.A[i]);
+	}
+
+}
